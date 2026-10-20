@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Príncipe da Paz – clipe de Natal</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--night:#0f2a3d;--dusk:#2b2a63;--gold:#ffcf5c;--cream:#fff4d6;--red:#c8452f;--pine:#3f7a54;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{margin:0;background:#07121c;color:var(--cream);font-family:'Fredoka',system-ui,sans-serif}
+main{max-width:980px;margin:0 auto;padding:12px}
+.stage{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:var(--night)}
+svg{position:absolute;inset:0;width:100%;height:100%}
+#cap{position:absolute;left:0;right:0;bottom:3%;text-align:center;padding:0 6%;font-size:clamp(15px,3.2vw,30px);font-weight:600;color:var(--cream);text-shadow:0 2px 8px #000,0 0 3px #000;min-height:1.3em;transition:opacity .4s}
+#go{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#07121ccc;border:0;color:var(--gold);font:600 clamp(22px,5vw,40px) 'Fredoka',sans-serif;cursor:pointer}
+#go small{font-size:.5em;color:var(--cream);font-weight:400}
+#go:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+audio{flex:1 1 260px;min-width:0}
+button.s,label.s{background:#1b3a52;color:var(--cream);border:1px solid #3b6a8c;border-radius:10px;padding:8px 14px;font:400 15px 'Fredoka',sans-serif;cursor:pointer}
+#fb{display:none;margin-top:10px;font-size:15px}
+.sc{opacity:0;transition:opacity 1.2s;pointer-events:none}.sc.on{opacity:1}
+.d{opacity:0;transition:opacity .9s}.on .d{opacity:1}
+.tw{animation:tw 3s ease-in-out infinite alternate}@keyframes tw{from{opacity:.2}to{opacity:1}}
+.sn{animation:fall linear infinite}@keyframes fall{to{transform:translateY(470px)}}
+.pulse{animation:pl 3s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}@keyframes pl{to{transform:scale(1.15)}}
+.walk{transform:translateX(-380px);transition:transform 14s linear}.on .walk{transform:none}
+.drop{transform:translate(560px,30px);transition:transform 5s ease-out}.on .drop{transform:translate(560px,150px)}
+.rise{transform:translate(400px,215px);transition:transform 24s ease-in-out}.on .rise{transform:translate(400px,70px)}
+.spin{animation:sp 40s linear infinite;transform-origin:400px 225px}@keyframes sp{to{transform:rotate(360deg)}}
+.hand{animation:sp 4s linear infinite;transform-box:fill-box;transform-origin:50% 100%}
+.bob{animation:bb .9s ease-in-out infinite alternate}@keyframes bb{to{transform:translateY(-8px)}}
+.fl{animation:fl 4s ease-in-out infinite alternate}@keyframes fl{to{transform:translateY(-10px)}}
+.bell{animation:sw 1.6s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:50% 0}@keyframes sw{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}
+.nt{animation:nt 4s ease-in infinite;font-size:26px;fill:var(--gold)}@keyframes nt{from{transform:translateY(0);opacity:1}to{transform:translateY(-90px);opacity:0}}
+.cl1{animation:c1 3s ease-in-out infinite alternate}.cl2{animation:c2 3s ease-in-out infinite alternate}
+@keyframes c1{to{transform:translateX(-150px)}}@keyframes c2{to{transform:translateX(150px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body><main>
+<div class="stage">
+<svg viewBox="0 0 800 450" role="img" aria-label="Clipe animado de Natal Príncipe da Paz">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f2a3d"/><stop offset="1" stop-color="#2b2a63"/></linearGradient>
+<radialGradient id="gl"><stop offset="0" stop-color="#fff4d6"/><stop offset=".35" stop-color="#ffcf5c"/><stop offset="1" stop-color="#ffcf5c" stop-opacity="0"/></radialGradient>
+<symbol id="star" overflow="visible"><polygon fill="#ffcf5c" stroke="#fff4d6" stroke-width="3" stroke-linejoin="round" points="0,-40 9.4,-13 38,-12.4 15.2,5 23.5,32.4 0,16 -23.5,32.4 -15.2,5 -38,-12.4 -9.4,-13"/></symbol>
+<symbol id="kid" overflow="visible"><path d="M-14 -26 Q0 -33 14 -26 L19 12 L-19 12Z" fill="currentColor"/><rect x="-9" y="-30" width="18" height="6" rx="3" fill="#c8452f"/><circle cy="-40" r="11" fill="var(--skin)"/><path d="M-11 -42 Q0 -56 11 -42 Q0 -48 -11 -42Z" fill="#1d1410"/><circle cx="-4" cy="-39" r="1.6" fill="#1d1410"/><circle cx="4" cy="-39" r="1.6" fill="#1d1410"/><path d="M-3 -34 Q0 -31 3 -34" stroke="#1d1410" fill="none" stroke-width="1.4"/></symbol>
+<symbol id="kidw" overflow="visible"><use href="#kid"/><line x1="14" y1="-24" x2="28" y2="-4" stroke="currentColor" stroke-width="6" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" values="-10 14 -24;-150 14 -24;-10 14 -24" dur="1.1s" repeatCount="indefinite"/></line></symbol>
+<symbol id="lamb" overflow="visible"><ellipse rx="22" ry="15" fill="#fff"/><circle cx="-8" cy="-10" r="9" fill="#fff"/><circle cx="12" cy="-8" r="8" fill="#fff"/><circle cx="-18" cy="-4" r="8" fill="#3a2a22"/><circle cx="-20" cy="-6" r="1.5" fill="#fff"/><circle cx="-14" cy="-1" r="3" fill="#f3a6a6" opacity=".7"/><rect x="-12" y="10" width="4" height="9" fill="#3a2a22"/><rect x="10" y="10" width="4" height="9" fill="#3a2a22"/></symbol>
+<symbol id="stable" overflow="visible"><rect x="-75" y="0" width="150" height="100" fill="#6b4a2f"/><polygon points="-90,0 0,-50 90,0" fill="#8a3b2a"/><polygon points="-90,0 0,-50 90,0 80,-4 0,-42 -80,-4" fill="#fff" opacity=".9"/><rect x="-55" y="15" width="110" height="85" fill="url(#gl)"/><rect x="-14" y="82" width="28" height="12" rx="3" fill="#8a5a2c"/><circle cy="78" r="8" fill="#fff4d6"/></symbol>
+<g id="dove"><ellipse rx="28" ry="14" fill="#fff"/><circle cx="26" cy="-8" r="9" fill="#fff"/><polygon points="34,-8 42,-5 34,-4" fill="#f2a33a"/><circle cx="29" cy="-10" r="1.6" fill="#1d1410"/><path d="M-4 -6 Q-22 -50 -50 -34 Q-26 -16 6 2Z" fill="#fff" stroke="#cfe3f0" stroke-width="2"/><path d="M-26 4 L-50 14 L-24 12Z" fill="#fff"/><path d="M30 6 Q44 22 58 16" stroke="#3f7a54" stroke-width="3" fill="none"/><ellipse cx="46" cy="18" rx="6" ry="3" fill="#3f7a54"/><ellipse cx="55" cy="14" rx="6" ry="3" fill="#3f7a54"/></g>
+<g id="m1"><rect width="800" height="450" fill="url(#sky)"/><text x="400" y="62" text-anchor="middle" font-size="36" font-weight="600" fill="#ffcf5c">Maravilhoso Conselheiro</text><polygon points="400,150 270,420 530,420" fill="#ffcf5c" opacity=".25"/><circle cx="400" cy="150" r="30" fill="url(#gl)"/><circle cx="400" cy="150" r="9" fill="#fff4d6"/><use href="#kid" x="400" y="390" style="--skin:#8a5a3c;color:#8a5a3c"/></g>
+<g id="m2"><rect width="800" height="450" fill="url(#sky)"/><circle cx="400" cy="230" r="120" fill="url(#gl)"/><g class="cl1"><ellipse cx="330" cy="230" rx="130" ry="55" fill="#33445c"/></g><g class="cl2"><ellipse cx="470" cy="230" rx="130" ry="55" fill="#3c4f68"/></g><text x="400" y="62" text-anchor="middle" font-size="36" font-weight="600" fill="#ffcf5c">Deus Forte</text></g>
+<g id="m3"><rect width="800" height="450" fill="url(#sky)"/><text x="400" y="62" text-anchor="middle" font-size="36" font-weight="600" fill="#ffcf5c">Pai da Eternidade</text><circle cx="400" cy="240" r="85" fill="#fff4d6" stroke="#ffcf5c" stroke-width="8"/><rect class="hand" x="397" y="175" width="6" height="65" rx="3" fill="#2b2a63"/><rect x="397" y="212" width="6" height="28" rx="3" fill="#c8452f"/><circle cx="400" cy="240" r="7" fill="#2b2a63"/><use href="#kid" x="270" y="420" style="--skin:#8a5a3c;color:#8a5a3c"/><use href="#kid" x="530" y="420" style="--skin:#c68a5b;color:#e3b53a"/></g>
+<g id="m4"><rect width="800" height="450" fill="url(#sky)"/><circle cx="400" cy="230" r="150" fill="url(#gl)"/><g class="fl"><use href="#dove" transform="translate(400 230) scale(2.2)"/></g><text x="400" y="62" text-anchor="middle" font-size="40" font-weight="600" fill="#ffcf5c">Príncipe da Paz</text></g>
+</defs>
+
+<rect width="800" height="450" fill="url(#sky)"/>
+<g id="stars"></g>
+<path d="M0 360 Q200 320 400 350 T800 335 V450 H0Z" fill="#cfe0ee"/><path d="M0 395 Q250 360 500 385 T800 380 V450 H0Z" fill="#e8f1f7"/>
+
+<g class="sc" data-s="0" data-e="12">
+<circle class="pulse" cx="400" cy="120" r="110" fill="url(#gl)"/><use href="#star" x="400" y="120" class="pulse"/>
+<g id="town"></g>
+<text class="d" style="transition-delay:3s" x="400" y="245" text-anchor="middle" font-size="58" font-weight="600" fill="#ffcf5c" stroke="#7a4a12" stroke-width="1.5" paint-order="stroke">Príncipe da Paz</text>
+<text class="d" style="transition-delay:5s" x="400" y="285" text-anchor="middle" font-size="22" fill="#fff4d6">uma canção de Natal</text>
+</g>
+
+<g class="sc" data-s="12" data-e="42">
+<g id="prints"></g>
+<circle class="pulse" cx="560" cy="300" r="170" fill="url(#gl)" opacity=".5"/>
+<use href="#stable" x="560" y="250"/>
+<polygon points="500,350 620,350 720,450 400,450" fill="#ffcf5c" opacity=".22"/>
+<g class="walk"><use href="#kid" x="370" y="385" style="--skin:#8a5a3c;color:#8a5a3c"/><use href="#kid" x="415" y="395" transform="translate(415 395) scale(.8) translate(-415 -395)" style="--skin:#c68a5b;color:#e3b53a"/><use href="#lamb" x="335" y="395" class="bob"/></g>
+<g class="drop"><circle r="60" fill="url(#gl)"/><use href="#star"/></g>
+<g data-s="34" data-e="42" class="sc"><text class="nt" x="290" y="300">♪</text><text class="nt" style="animation-delay:1.3s" x="330" y="320">♫</text><text class="nt" style="animation-delay:2.6s" x="260" y="330">♪</text></g>
+</g>
+
+<g class="sc" data-s="42" data-e="68">
+<g class="spin"><g id="rays"></g></g>
+<circle class="pulse" cx="400" cy="225" r="130" fill="url(#gl)"/>
+<g data-s="42" data-e="46" class="sc"><rect x="350" y="250" width="100" height="40" rx="8" fill="#8a5a2c"/><circle class="pulse" cx="400" cy="240" r="28" fill="#fff4d6"/><text x="400" y="85" text-anchor="middle" font-size="30" font-weight="600" fill="#ffcf5c">Nasceu o Menino!</text></g>
+<g data-s="46" data-e="50" class="sc"><circle cx="400" cy="235" r="62" fill="#2f6fb0"/><path d="M360 215 Q380 190 405 205 Q420 230 395 245 Q370 250 360 215Z M410 255 Q440 240 450 265 Q430 290 410 275Z" fill="#5aa469"/><g id="flags"></g><path d="M300 330 Q400 300 500 330 L520 370 L280 370Z" fill="#ffcf5c" opacity=".85"/></g>
+</g>
+
+<g class="sc" data-s="68" data-e="85">
+<rect x="150" y="40" width="500" height="10" rx="5" fill="#6b4a2f"/><g id="bells"></g>
+<g data-s="78" data-e="85" class="sc"><rect x="0" y="0" width="800" height="450" fill="url(#sky)" opacity=".92"/><circle cx="400" cy="225" r="100" fill="#173a63" stroke="#5aa4d8" stroke-width="3"/><g id="lights"></g></g>
+</g>
+
+<g class="sc" data-s="84" data-e="125">
+<circle class="pulse" cx="400" cy="250" r="190" fill="url(#gl)" opacity=".5"/>
+<polygon points="400,120 320,230 480,230" fill="#3f7a54"/><polygon points="400,175 300,285 500,285" fill="#3f7a54"/><polygon points="400,230 280,340 520,340" fill="#2f6342"/><rect x="390" y="338" width="20" height="25" fill="#6b4a2f"/>
+<use href="#star" x="400" y="108" transform="translate(400 108) scale(.5) translate(-400 -108)"/>
+<g id="orn"></g><g id="ring"></g>
+<g data-s="122" data-e="124" class="sc"><rect width="800" height="450" fill="url(#gl)"/></g>
+</g>
+
+<g class="sc" data-s="124" data-e="154">
+<use href="#stable" x="210" y="250" transform="translate(210 250) scale(.9) translate(-210 -250)"/>
+<g class="rise"><circle r="70" fill="url(#gl)"/><use href="#star"/></g>
+<g><use href="#kidw" x="440" y="360" transform="translate(440 360) scale(1.7) translate(-440 -360)" class="bob" style="--skin:#8a5a3c;color:#8a5a3c"/><use href="#kidw" x="540" y="372" transform="translate(540 372) scale(1.4) translate(-540 -372)" class="bob" style="--skin:#c68a5b;color:#e3b53a;animation-delay:.3s"/><use href="#lamb" x="620" y="385" transform="translate(620 385) scale(1.5) translate(-620 -385)" class="bob"/></g>
+<text class="d" style="transition-delay:20s" x="400" y="235" text-anchor="middle" font-size="64" font-weight="600" fill="#ffcf5c" stroke="#7a4a12" stroke-width="1.5" paint-order="stroke">Feliz Natal!</text>
+<g data-s="136" data-e="144" class="sc"><rect width="800" height="450" fill="url(#sky)"/><circle class="pulse" cx="400" cy="250" r="200" fill="url(#gl)"/><use href="#star" x="400" y="62" class="pulse"/><path d="M265 300 L535 300 L505 385 L295 385Z" fill="#6b4a2f"/><ellipse cx="412" cy="288" rx="78" ry="27" fill="#fff4d6"/><path d="M380 275 Q412 262 450 276" stroke="#e3c88c" stroke-width="3" fill="none"/><circle cx="333" cy="276" r="30" fill="none" stroke="#ffcf5c" stroke-width="3" opacity=".8"/><circle cx="333" cy="276" r="26" fill="#e6b98f"/><path d="M312 268 Q333 246 354 268 Q333 258 312 268Z" fill="#3a2a22"/><path d="M322 276 Q326 280 330 276 M336 276 Q340 280 344 276" stroke="#3a2a22" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M328 288 Q333 293 338 288" stroke="#a8553a" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="322" cy="284" r="4" fill="#f3a6a6" opacity=".6"/><circle cx="344" cy="284" r="4" fill="#f3a6a6" opacity=".6"/><path d="M272 304 Q400 278 528 304 L535 316 H265Z" fill="#e3b53a"/><text x="400" y="425" text-anchor="middle" font-size="34" font-weight="600" fill="#ffcf5c">Jesus, o Príncipe da Paz</text></g>
+</g>
+
+<g class="sc" data-s="50" data-e="54.5"><use href="#m1"/></g><g class="sc" data-s="54.5" data-e="59"><use href="#m2"/></g><g class="sc" data-s="59" data-e="63.5"><use href="#m3"/></g><g class="sc" data-s="63.5" data-e="68"><use href="#m4"/></g>
+<g class="sc" data-s="104" data-e="108.5"><use href="#m1"/></g><g class="sc" data-s="108.5" data-e="113"><use href="#m2"/></g><g class="sc" data-s="113" data-e="117.5"><use href="#m3"/></g><g class="sc" data-s="117.5" data-e="122"><use href="#m4"/></g>
+<g id="snow"></g>
+</svg>
+<div id="cap" aria-live="polite"></div>
+<button id="go" aria-label="Começar o clipe">▶ Toque para começar<small>use o som do aparelho</small></button>
+</div>
+<div class="bar">
+<audio id="a" controls preload="auto" src="audio/principe-da-paz.mp3"></audio>
+<button class="s" id="mute">Ver sem música</button>
+</div>
+<div id="fb"><label class="s">Escolher o mp3 no aparelho <input id="f" type="file" accept="audio/*" hidden></label></div>
+</main>
+<script>
+const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
+const E=(t,at,p)=>{const e=document.createElementNS(NS,t);for(const k in at)e.setAttribute(k,at[k]);p.appendChild(e);return e};
+const R=(i)=>{const x=Math.sin(i*127.1)*43758.5;return x-Math.floor(x)};
+for(let i=0;i<70;i++)E('circle',{cx:R(i)*800,cy:R(i+99)*300,r:.8+R(i+7)*1.6,fill:'#fff4d6',class:'tw',style:`animation-delay:-${R(i+3)*3}s`},$('stars'));
+for(let i=0;i<45;i++)E('circle',{cx:R(i+300)*800,cy:-10,r:1.5+R(i+5)*2,fill:'#fff',opacity:.85,class:'sn',style:`animation-duration:${7+R(i+9)*7}s;animation-delay:-${R(i+11)*12}s`},$('snow'));
+for(let i=0;i<7;i++){const x=110+i*95,y=345+(i%2)*14;E('rect',{x:x-24,y:y-30,width:48,height:34,fill:'#7a5a40'},$('town'));E('polygon',{points:`${x-30},${y-30} ${x},${y-56} ${x+30},${y-30}`,fill:i%2?'#8a3b2a':'#2f6342'},$('town'));E('rect',{x:x-7,y:y-22,width:14,height:14,rx:2,fill:'#ffcf5c',class:'d',style:`transition-delay:${1+i*.8}s`},$('town'))}
+for(let i=0;i<10;i++)for(let j=0;j<2;j++)E('ellipse',{cx:70+i*40,cy:402-i*4+j*9,rx:5,ry:3,fill:'#9db7cc',class:'d',style:`transition-delay:${i*1.3}s`},$('prints'));
+for(let i=0;i<12;i++){const a=i*30*Math.PI/180;E('polygon',{points:`400,225 ${400+Math.cos(a-.09)*620},${225+Math.sin(a-.09)*620} ${400+Math.cos(a+.09)*620},${225+Math.sin(a+.09)*620}`,fill:'#ffcf5c',opacity:.3},$('rays'))}
+['#c8452f','#3f7a54','#ffcf5c','#2b6fb0','#fff'].forEach((c,i)=>{const a=(-120+i*30)*Math.PI/180,x=400+Math.cos(a)*62,y=235+Math.sin(a)*62;E('line',{x1:x,y1:y,x2:x+Math.cos(a)*18,y2:y+Math.sin(a)*18,stroke:'#fff4d6','stroke-width':2},$('flags'));E('rect',{x:x+Math.cos(a)*18,y:y+Math.sin(a)*18-5,width:12,height:8,fill:c},$('flags'))});
+[250,400,550].forEach((x,i)=>{const g=E('g',{class:'bell',style:`animation-delay:-${i*.5}s`},$('bells'));E('line',{x1:x,y1:50,x2:x,y2:95,stroke:'#6b4a2f','stroke-width':3},g);E('path',{d:`M${x-34} 175 Q${x-34} 95 ${x} 90 Q${x+34} 95 ${x+34} 175Z`,fill:['#ffcf5c','#e8a33a','#ffd98a'][i],stroke:'#a8741f','stroke-width':3},g);E('circle',{cx:x-6,cy:125,r:5,fill:'#1d1410'},g);E('circle',{cx:x+6,cy:125,r:5,fill:'#1d1410'},g);E('path',{d:`M${x-8} 142 Q${x} 150 ${x+8} 142`,stroke:'#1d1410',fill:'none','stroke-width':2.5},g);E('circle',{cx:x,cy:182,r:8,fill:'#a8741f'},g)});
+for(let i=0;i<40;i++){const a=R(i+50)*6.283,r=Math.sqrt(R(i+60))*92;E('circle',{cx:400+Math.cos(a)*r*.98,cy:225+Math.sin(a)*r*.98,r:3.5,fill:'#ffcf5c',class:'d tw',style:`transition-delay:${i*.3}s`},$('lights'))}
+for(let i=0;i<9;i++)E('circle',{cx:350+R(i+20)*100,cy:150+R(i+30)*170,r:5,fill:['#c8452f','#ffcf5c','#2b6fb0'][i%3]},$('orn'));
+const sk=['#8a5a3c','#c68a5b','#f0c8a0','#5a3a28','#d9a273'],tn=['#8a5a3c','#e3b53a','#c8452f','#2b6fb0','#3f7a54'];
+for(let i=0;i<10;i++){const a=i/10*6.283,x=400+Math.cos(a)*270,y=395+Math.sin(a)*38,s=.8+.3*(Math.sin(a)+1)/2;E('use',{href:'#kidw',x:0,y:0,transform:`translate(${x} ${y}) scale(${s})`,style:`--skin:${sk[i%5]};color:${tn[(i+2)%5]}`},E('g',{class:'bob',style:`animation-delay:-${i*.15}s`},$('ring')))}
+const L=[[0,'Nesta noite tão linda, vamos celebrar!'],[12,'Pequenos passos na estrebaria'],[19,'Chegou a luz da nossa alegria'],[26,'Um dom do céu enviado para nós'],[34,'Cantemos juntos em uma só voz'],
+[42,'Pois um menino nasceu para nós, um filho nos foi dado!'],[50,'O governo descansa sobre os seus ombros!'],[56,'Ele será chamado Maravilhoso Conselheiro,'],[62,'Deus Forte, Pai da Eternidade, Príncipe da Paz!'],
+[68,'Sinos de Natal começam a tocar'],[75,'Toda a terra vai se iluminar'],[84,'De mãos dadas vamos festejar'],[91,'O amor de Deus que veio nos guiar'],
+[98,'Pois um menino nasceu para nós, um filho nos foi dado!'],[106,'O governo descansa sobre os seus ombros!'],[112,'Ele será chamado Maravilhoso Conselheiro,'],[118,'Deus Forte, Pai da Eternidade, Príncipe da Paz!'],
+[124,'Ele é o Príncipe da Paz...'],[128,'Maravilhoso! Deus Forte!'],[136,'Que trouxeste o amor ao mundo!'],[145,'Feliz Natal!'],[154,'']];
+const a=$('a'),cap=$('cap'),go=$('go'),els=[...document.querySelectorAll('[data-s]')];let man=null,last=-1,run=false;
+const T=()=>man!==null?(performance.now()-man)/1000:a.currentTime;
+const OFF=4;function tick(){const t=Math.max(0,T()-OFF);els.forEach(e=>e.classList.toggle('on',t>=+e.dataset.s&&t<+e.dataset.e));
+let k=0;while(k<L.length-1&&t>=L[k+1][0])k++;if(k!==last){last=k;cap.textContent=L[k][1]}
+if(man!==null&&t>=154.5){man=null;end()}
+if(run)requestAnimationFrame(tick)}
+function start(){go.style.display='none';run=true;tick();if(man===null){a.currentTime=0;a.play().catch(()=>{$('fb').style.display='block';man=performance.now()})}}
+const AUTOR='Oscar Gomes da Silva Junior';function end(){run=false;go.innerHTML='<span>Príncipe da Paz</span><small>'+(AUTOR?'Letra e música: '+AUTOR:'Letra e música originais')+'</small><small>Animação: Claude, da Anthropic</small><small style="color:var(--gold);margin-top:14px">↻ Ver de novo</small>';go.style.display='flex';tick()}
+go.onclick=start;a.onplay=()=>{man=null;if(!run){run=true;go.style.display='none';tick()}};a.onseeked=tick;a.onended=end;
+a.onerror=()=>{$('fb').style.display='block'};
+$('mute').onclick=()=>{a.pause();man=performance.now();go.style.display='none';run=true;tick()};
+$('f').onchange=e=>{const f=e.target.files[0];if(f){man=null;a.src=URL.createObjectURL(f);a.play()}};
+tick();
+</script></body></html>
